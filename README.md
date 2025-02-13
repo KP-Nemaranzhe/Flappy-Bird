@@ -28,7 +28,7 @@ Getting started is easy! Follow these steps to play the game locally:
 
    ```bash
    cd Flappy-Bird
-4. **Compile the game:*
+4. **Compile the game:**
    
    ```bash
    javac FlappyBird.java
