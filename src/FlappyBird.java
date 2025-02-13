@@ -125,7 +125,7 @@ public class FlappyBird extends JPanel implements ActionListener, KeyListener {
         //pipes
         for (int i = 0; i < pipes.size(); i++) {
             Pipe pipe = pipes.get(i);
-            g.drawImage(pipe.img, pipe.x, pipe.y, pipe.width, pipeHeight, null);
+            g.drawImage(pipe.img, pipe.x, pipe.y, pipe.width, pipe.height, null);
         }
     
     }
@@ -135,6 +135,13 @@ public class FlappyBird extends JPanel implements ActionListener, KeyListener {
         velocityY += gravity;
         bird.y += velocityY;
         bird.y = Math.max(bird.y, 0);
+
+        //pipes
+        for (int i = 0; i < pipes.size(); i++) {
+            Pipe pipe = pipes.get(i);
+            pipe.x += velocityX;
+        }
+
     }
 
     @Override
