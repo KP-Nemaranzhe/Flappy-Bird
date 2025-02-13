@@ -2,8 +2,8 @@
 //Import the essential tools
 import java.awt.*;
 import java.awt.event.*;
-import java.io.PipedInputStream;
 import java.util.ArrayList;
+import java.util.Random;
 import javax.swing.*;
 
 //Class (Our class will inherite the JPanel class)
@@ -68,6 +68,7 @@ public class FlappyBird extends JPanel implements ActionListener, KeyListener {
     int gravity = 1;
 
     ArrayList<Pipe> pipes;
+    Random random = new Random();
 
     //The timer for the loop
     Timer gameLoop;
@@ -97,6 +98,7 @@ public class FlappyBird extends JPanel implements ActionListener, KeyListener {
                 placePipes();
             }
         });
+        placePipesTimer.start();
 
         //Game Timer
         gameLoop = new Timer(1000/60, this); //1000/60 = 16.6
@@ -105,9 +107,13 @@ public class FlappyBird extends JPanel implements ActionListener, KeyListener {
 
     //Methods
     public void placePipes() {
-        
+        // (0 -1) * pipeHeight/2 ->> (0-256)
+        //128
+        // 0 - 128 - (0 - 256) --> pipeHeight/4
+        int randomPipeY = (int)(pipeY - pipeHeight/4 - Math.random()*pipeHeight/2);
         Pipe topPipe = new Pipe(topPipeImg);
-        pipe.add(topPipe);
+        topPipe.y = randomPipeY;
+        pipes.add(topPipe);
     }
 
     public void paintComponent(Graphics g) {
