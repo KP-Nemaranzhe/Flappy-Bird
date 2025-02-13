@@ -1,10 +1,13 @@
 //This file contains the game logic
 //Import the essential tools
 import java.awt.*;
+import java.awt.event.*;
+import java.util.ArrayList;
+import java.util.Random;
 import javax.swing.*;
 
 //Class (Our class will inherite the JPanel class)
-public class FlappyBird extends JPanel{
+public class FlappyBird extends JPanel implements ActionListener{
     //Demensions
     int boardWidth = 360;
     int boardHeight = 640;
@@ -57,7 +60,7 @@ public class FlappyBird extends JPanel{
         bird =new Bird(birdImg);
 
         //Game Timer
-        gameLoop = new Timer(1000/60, this);
+        gameLoop = new Timer(1000/60, this); //1000/60 = 16.6
     }
 
     //Methods

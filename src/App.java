@@ -1,9 +1,7 @@
-
-import javax.swing.*;
-
 //This the main file where the game willl execute
 
 //Import the essential tools
+import javax.swing.*;
 
 public class App{
     public static void main(String[] args){
