@@ -14,7 +14,6 @@ Whether you're a beginner looking for a fun game or someone interested in game m
 ## 📸 **Game Preview**
 
 ![Flappy Bird Preview](flappy-bird.png)  
-*(Image Placeholder: Insert a screenshot or gif of the game in action)*
 
 ## 🛠️ **Installation Instructions**
 Getting started is easy! Follow these steps to play the game locally:
