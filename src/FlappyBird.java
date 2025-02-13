@@ -1,8 +1,7 @@
 //This file contains the game logic
 //Import the essential tools
 import java.awt.*;
-import javax.swing.ImageIcon;
-import javax.swing.JPanel;
+import javax.swing.*;
 
 //Class (Our class will inherite the JPanel class)
 public class FlappyBird extends JPanel{
@@ -35,6 +34,6 @@ public class FlappyBird extends JPanel{
 
     public void draw(Graphics g) {
         //background
-        g.drawImage(backgroundImg, 0, 0, boardWidth, boardHeight, null )
+        g.drawImage(backgroundImg, 0, 0, boardWidth, boardHeight, null );
     }
 }
