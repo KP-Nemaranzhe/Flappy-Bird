@@ -2,8 +2,6 @@
 //Import the essential tools
 import java.awt.*;
 import java.awt.event.*;
-import java.util.ArrayList;
-import java.util.Random;
 import javax.swing.*;
 
 //Class (Our class will inherite the JPanel class)
@@ -42,6 +40,7 @@ public class FlappyBird extends JPanel implements ActionListener{
     //Field for bird
     //Game logic
     Bird bird;
+    int velocityY = -6;
 
     Timer gameLoop;
 
@@ -61,6 +60,7 @@ public class FlappyBird extends JPanel implements ActionListener{
 
         //Game Timer
         gameLoop = new Timer(1000/60, this); //1000/60 = 16.6
+        gameLoop.start();
     }
 
     //Methods
@@ -70,11 +70,23 @@ public class FlappyBird extends JPanel implements ActionListener{
     }
 
     public void draw(Graphics g) {
+        System.out.println("draw");
         //background
         g.drawImage(backgroundImg, 0, 0, boardWidth, boardHeight, null );
         
         //bird
         g.drawImage(bird.img, bird.x, bird.y, bird.width, bird.height, null);
-   
+    }
+
+    public void move(){
+        //bird
+        bird.y += velocityY;
+        bird.y = Math.max(bird.y, 0)
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        move();
+        repaint();
     }
 }
