@@ -21,4 +21,48 @@ Getting started is easy! Follow these steps to play the game locally:
 
 1. **Clone this repository** or **download the source files](#)**
    ```bash
-   git clone https://github.com/KP-Nemaranzhe/Flappy-Bird-java.git
+   git clone https://github.com/KP-Nemaranzhe/Flappy-Bird.git
+2. **Ensure you have Java (JDK 8 or higher) installed on your machine.**
+
+3. **Navigate to the project folder in your terminal:**
+
+   ```bash
+   cd Flappy-Bird
+4. **Compile the game:*
+   
+   ```bash
+   javac FlappyBird.java
+5. **Run the game:**
+
+   ```bash
+   java FlappyBird
+
+## 🕹️**Now you're all set to play the game!**
+
+## 🕹️**How to Play**
+
+- Spacebar: Tap the spacebar to make the bird fly upward.
+- Objective: Fly through the pipes without hitting them.
+- Goal: Get the highest score by passing through as many pipes as possible.
+- Game Over: The game ends if the bird hits a pipe or the ground.
+
+## 💡 Technologies Used
+- Java (JDK 8+)
+- Object-Oriented Programming principles
+- GUI (Graphics and animation using Java's Swing library)
+
+## 🚀 Future Improvements
+This game is a basic version, but there are tons of ways to improve it! Some ideas for the future include:
+
+- Adding sound effects and background music.
+- More advanced graphics and animation.
+- Adding difficulty levels or power-ups.
+  
+## 🌟 Why I Made This
+I built this game to improve my skills in Java, especially in game development and graphical user interfaces (GUI). It was an excellent opportunity to apply my knowledge of object-oriented programming and to create something fun and interactive!
+
+## 💬 Get in Touch
+Feel free to reach out if you have any questions, suggestions, or want to collaborate on something fun!
+
+- **LinkedIn:** https://www.linkedin.com/in/progress-nemaranzhe/ 
+- **Email:** pronemaranzhe@gmail.com
