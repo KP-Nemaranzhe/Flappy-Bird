@@ -20,6 +20,7 @@ public class App{
         FlappyBird flappyBird = new FlappyBird();
         frame.add(flappyBird);
         frame.pack(); //we include this to exclude the title bar size from dimensions
+        flappyBird.requestFocus();
         frame.setVisible(true); //this will make the window visible
         
     }
