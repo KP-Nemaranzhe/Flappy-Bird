@@ -13,7 +13,7 @@ Whether you're a beginner looking for a fun game or someone interested in game m
 
 ## 📸 **Game Preview**
 
-![Flappy Bird Preview](https://via.placeholder.com/800x400.png?text=Flappy+Bird+Preview)  
+![Flappy Bird Preview](https://flappy-bird.png)  
 *(Image Placeholder: Insert a screenshot or gif of the game in action)*
 
 ## 🛠️ **Installation Instructions**
