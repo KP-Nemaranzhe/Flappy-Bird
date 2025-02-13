@@ -21,4 +21,4 @@ Getting started is easy! Follow these steps to play the game locally:
 
 1. **Clone this repository** or [download the source files](#).
    ```bash
-   git clone https://github.com/yourusername/flappy-bird-java.git
+   git clone https://github.com/KP-Nemaranzhe/Flappy-Bird-java.git
